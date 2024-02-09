@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Stocksify</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    
+                        
+     
+                      
+        
+
+    <header class="bg-gradient" id="home">
+        <h1 class="title-h">Stocksify</h1>
+        <div class="container mt-5">
+            <h1>Redefining market research with next generation AI assistant</h1>
+            <p class="tagline">Unveiling on 24th-25th February as part of Persistent Semicolon </p>
+        </div>
+        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <!-- <div class="client-logos my-5">
+        <div class="container text-center">
+            <div id="countdown"></div>
+        </div>
+    </div> -->
+
+    
+
+  
+
+    <div>
+
+    </div>
+
+   
+
+    <!-- JavaScript files -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 25, 2024 00:00:00").getTime();
+    
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+    
+            // Calculate the remaining time
+            var distance = countDownDate - now;
+    
+            // Calculate days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Display the countdown in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
